@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atria Schofield | Game Design</title>
+   
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    
+    <style>
+        a:link{
+            color:white;
+            text-decoration: none;
+        }
+        a:visited{
+            color:rgb(255, 255, 255);
+        }
+        a:focus{
+            color: rgb(255, 255, 255);
+        }
+        a:hover{
+            color:aquamarine;
+        }
+        a:active{
+            color:  rgb(75, 129, 111);
+        }
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            position: sticky;
+            top: 0px;
+            background-color: black;
+            list-style-type: none;
+            font-size: 25px;
+            padding: 15px;
+            width: 100%;
+            left:0px;
+            top:0px;
+            font-size: 10;
+        }
+
+        .navbar strong{
+            font-size: 30;
+        }
+
+        body{
+            color: white;
+            background-color: black;
+            font-family:Tahoma, Arial, Helvetica, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .illustration{
+            float: right;
+            margin-right: 30px;
+        }
+
+        .about{
+            margin-top: 320px;
+            margin-bottom: 100px;
+        }
+
+        h1{
+            font-size: 40px;
+        }
+        
+        main,footer{
+            clear:right;
+        }
+
+        h1 strong, h2{
+            color:aquamarine;
+        }
+        footer strong{
+            color: aquamarine;
+        }
+
+        .games strong{
+            color:aquamarine;
+        }
+
+        .projects h2, .art h2{
+            text-align: center;
+            padding: 10px;
+            font-size: 40px;
+            text-decoration: solid underline rgb(255, 255, 255) 4px;
+        }
+
+        .imgclass{
+            border-radius: 25px;
+            width:350px;
+            height:250px;
+        }
+
+        .art_grid{
+            grid-column:0;
+            grid-row:0;
+        }
+
+        .img_description{
+            width:315px;
+            height: 50px;
+        }
+        
+        @media(min-width: 700px) {
+            .topbox{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/reel.gif");
+            
+            background-repeat: no-repeat;
+            background-size:cover;
+            font-size: 25px;
+            padding-bottom:25px;
+            }
+
+            .games-grid{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+            justify-content: center;
+            grid-column-gap:5vw;
+            grid-row-gap: 3vw;
+            }
+        }
+        @media(max-width: 700px) {
+            .topbox{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/reel-thin.gif");
+            
+            background-repeat: no-repeat;
+            background-size:cover;
+            font-size: 25px;
+            padding-bottom:25px;
+            }
+
+            .games-grid{
+            display:grid;
+            grid-template-columns: auto;
+            padding: 10px;
+            justify-content: center;
+            grid-column-gap:10vw;
+            grid-row-gap: 3vw;
+            }
+        }
+
+        ul.art {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        overflow-x: auto;
+        list-style-type: none;
+        }
+
+        ul.socials {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        overflow-x: auto;
+        list-style-type: none;
+        gap: 15px;
+        }
+
+        ul.socials img{
+            max-width: 40px;
+        }
+
+        ul.skills {
+        margin: 0;
+        justify-content: center;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        overflow-x: auto;
+        list-style-type: none;
+        gap: 15px;
+        }
+
+        ul.skills img{
+            max-width: 40px;
+        }
+
+        .projects strong{
+            color:rgb(127, 255, 212);
+        }
+
+        .see-more{
+            text-align:center;
+            font-size:25px;
+            padding:10px;
+        }
+
+        .projects{
+            margin: 1em;
+        }
+
+        .art{
+            margin: 1em;
+        }
+
+        footer{
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="navbar">
+        <li class="nav-element"><strong><a href="#top">Atria Schofield</a></strong></li>
+        <li class="nav-element"><a href="#projects">Projects</a></li>
+        <li class="nav-element"><a href="#art">Art</a></li>
+        <li class="nav-element"><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="topbox">
+        <header>
+            <h1>Artist, Programmer<br><strong>Game Designer</strong></h1>
+            <div class="illustration"><img src="images/atria.png" alt="illustration of Atria Schofield"></div>
+        </header>
+    
+        <div class="about">
+        <h2>About Me</h2>
+        <p>Hi there, I'm Atria! I run a solo development project called Vaporsea, and I've been passionate about videogames for my entire life. 
+            I'm  currently pursuing a Bachelor's of Science in Game Design and Development at RIT.</p>
+        <p>I also love writing, art, programming, baking, performing, theater, and Nintendo!</p>
+        </div>
+
+        <div class="skills">
+            <ul class="skills">
+                <li> <img src="images/unity.png" alt="Unity Engine"></li>
+                <li> <img src="images/vsc.png" alt="Visual Studio Code"></li>
+                <li> <img src="images/photoshop.png" alt="Photoshop"></li>
+                <li> <img src="images/ai.png" alt="Illustrator"></li>
+                <li> <img src="images/ue4.png" alt="Unreal Engine 4"></li>
+                <li> <img src="images/maya.png" alt="Autodesk Maya"></li>
+                <li> <img src="images/csharp.png" alt="c#"></li>
+                <li> <img src="images/python.png" alt="python"></li>
+                <li> <img src="images/html.png" alt="html5"></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    
+    <main>
+
+    
+
+
+    </ul>
+    </div>
+    
+    <div class="projects">
+    <h2 id="projects">Projects</h2>
+    <div class="games-grid">
+        <div class="games-grid-item"> <img class="imgclass" img src="images/eternia.png" alt="Eternia Escape"> 
+            <p class= "img_description"><strong>Eternia Escape</strong><br> Solo Project<br>A challenging but forgiving run and gun game about paradoxes</p></div>
+        <div class="games-grid-item"> <img class="imgclass" src="images/rat.png" alt="Rats of the Plague">
+            <p class= "img_description"><strong>Rats of the Plague</strong><br>Designer, programmer, and artist<br> A frantic top down horde shooter set in the black plague.</p></div>
+        <div class="games-grid-item"> <img class="imgclass" src="images/alien.png" alt="Alien Roundup">
+            <p class= "img_description"><strong>Alien Roundup</strong><br>Solo Project<br>An addictive arcade high score chaser where you catch slippery aliens</p></div>
+        <div class="games-grid-item"> <img class="imgclass" src="images/eternia2.png" alt="Eternia 2">
+            <p class= "img_description"><strong>Eternia 2</strong><br>Solo Project<br>A followup to Eternia Escape with an all new story</p></div>
+        <div class="games-grid-item"> <img class="imgclass" src="images/mythos.png" alt="Mythos">
+            <p class= "img_description"><strong>Mythos</strong><br> Designer, programmer, and artist<br>A mythological space shooter where you face off with gods</p></div>
+        <div class="games-grid-item"> <img class="imgclass" src="images/robo.png" alt="Robo Shootout">
+            <p class= "img_description"><strong>Robo Shootout</strong><br> Solo Project<br>A white knuckle multiplayer dueling game</p></div>
+        <div class="games-grid-item"> <img class="imgclass" src="images/ice.png" alt="Ice Climber 3D">
+            <p class= "img_description"><strong>Ice Climber 3D</strong><br> Project lead and programming<br>A new twist on a classic game</p></div>
+        <div class="games-grid-item"> <img class="imgclass" src="images/superstars.png" alt="Rhythm Heaven Superstars">
+            <p class= "img_description"><strong>Rhythm Heaven Superstars</strong><br> Project Lead and art support<br>A collection of rhythm games with iconic characters</p></div>
+        <div class="games-grid-item"> <img class="imgclass" src="images/super.png" alt="Super Mole Hole">
+            <p class= "img_description"><strong>Super Mole Hole</strong><br>Solo Project<br>An endless puzzle game with strategic gameplay</p></div>
+        <div class="games-grid-item"> <img class="imgclass" src="images/mole.png" alt="Mole Hole">
+            <p class= "img_description"><strong>Mole Hole</strong><br>Solo Project<br>A simple puzzle game about digging deep</p></div>
+        <div class="games-grid-item"> <img class="imgclass" src="images/kamek.png" alt="Kamek's Midnight Flight">
+            <p class= "img_description"> <strong>Kamek's Midnight Flight</strong><br>Project lead, programmer and art support<br>A high flying shmup with a spooky halloween twist </p></div> 
+        <div class="games-grid-item"> <img class="imgclass" src="images/pikmin.png" alt="Untitled Pikmin Fangame">
+            <p class= "img_description"><strong>Untitled Pikmin Fangame</strong><br>Project lead, programmer and art support<br>A simple platformer collectathon with a time limit </p></div> 
+        </div>
+    <p class="see-more">See more on my <strong><a href="https://vaporsea.itch.io">Itch.io</a> </strong>page.  </p>
+    </div>
+
+    <br>
+
+    <div class="art">
+    <h2 id="art">Art</h2>
+        <ul class="art">
+            <li> <img src="images/3d.png" alt="Art Piece"> </li>
+            <li> <img src="images/grongie.png" alt="Art Piece"> </li>
+            <li> <img src="images/mauri.png" alt="Art Piece"> </li>
+            <li> <img src="images/why.png" alt="Art Piece"> </li>
+            <li> <img src="images/sonic.png" alt="Art Piece"> </li>
+            <li> <img src="images/bea.png" alt="Art Piece"> </li>
+            <li> <img src="images/skyline.png" alt="Art Piece"> </li>
+            <li> <img src="images/gibbon.png" alt="Art Piece"> </li>
+            <li> <img src="images/guy.png" alt="Art Piece"> </li>
+            <li> <img src="images/fog.png" alt="Art Piece"> </li>
+            <li> <img src="images/nerd.png" alt="Art Piece"> </li>
+        </ul>
+    </div>
+
+    </main>
+
+    <br>
+
+    <footer id = "contact">
+        <h2>Contact Me</h2>
+        <p>Send me an ema<!-- asdfwergjds -->il: <!-- awrewshfjsd --><strong><b>at<!-- weuoriewajfbsdjkf -->ria<!-- asdfnkweriwehrtuia -->scho<!-- fhetydagzzzgjds -->field<!-- ewurureeuwrfsebajfk -->@<!-- sadsfnnuwreitn -->gma<!-- sdfisdvisndajtkabwsertk -->il.<!-- sadfnuieiwrrth -->co<!-- asdf -->m</strong></b></p>
+        <ul class="socials">
+            <li> <a href="https://discord.gg/srcj3vSUaN"><img src="images/discord.png" alt="Discord Link"> </a></li>
+            <li> <a href="https://www.youtube.com/channel/UCKGVau7RMQGV55ghL_jj8ow"><img src="images/yt.png" alt="Youtube Link"></a></li>
+            <li> <a href="https://vaporsea.itch.io"><img src="images/itch.png" alt="itch.io Link"></a></li>
+            <li> <a href="https://twitter.com/Vapor_Sea"><img src="images/twitter.png" alt="Twitter Link"></a></li>
+
+        </ul>
+    </footer>
+
+    <br>
+</body>
+</html>
